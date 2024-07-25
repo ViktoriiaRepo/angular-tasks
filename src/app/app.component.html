@@ -1,2 +1,14 @@
-<app-card></app-card>
-<router-outlet />
+<div class="container">
+  @if (toggler) {
+  <app-lifecycle
+    [title]="title"
+    [name]="name"
+    [obj]="obj"
+    class="lifecycle-component"
+  >
+    Component content for ngAfterContentInit
+  </app-lifecycle>
+  }
+  <button class="toggler-button" (click)="toggler = !toggler">Toggler</button>
+  <router-outlet></router-outlet>
+</div>

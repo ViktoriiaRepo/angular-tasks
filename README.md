@@ -1,27 +1,23 @@
-# AngularTasks
+# Angular Lifecycle Hooks Demonstration
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+This project demonstrates the use of Angular lifecycle hooks within a component. It includes functionality to toggle the component's visibility, allowing observation of the lifecycle hooks in action.
 
-## Development server
+<img src="./src/assets/images/img.png" width="100%">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Console Output Explanation
 
-## Code scaffolding
+When you run this project and interact with the toggler button, you'll see various messages logged in the console. These messages correspond to the different lifecycle hooks in Angular, providing insight into the component's lifecycle.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The expected output in the console includes:
 
-## Build
+- **Child component created**: Logged when the component is instantiated.
+- **Component changes**: Logged when any input property changes, along with the details of those changes.
+- **ngOnInit**: Logged once after the first `ngOnChanges` method is called.
+- **ngDoCheck**: Logged during every change detection run.
+- **ngAfterContentInit**: Logged after content projection into the component.
+- **ngAfterContentChecked**: Logged after the content has been checked.
+- **ngAfterViewInit**: Logged after the component's view has been initialized.
+- **ngAfterViewChecked**: Logged after the component's view has been checked.
+- **ngOnDestroy**: Logged just before the component is destroyed.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+The logs help in understanding the sequence and timing of these lifecycle hooks.
