@@ -2,7 +2,7 @@
 
 This project demonstrates the use of Angular lifecycle hooks within a component. It includes functionality to toggle the component's visibility, allowing observation of the lifecycle hooks in action.
 
-<img src="./src/assets/images/img.png" width="100%">
+<img src="./src/assets/img.png" width="100%">
 
 ## Console Output Explanation
 
